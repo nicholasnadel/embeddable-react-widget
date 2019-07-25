@@ -22,12 +22,48 @@
   }
 }
 
+.omninav-topbar {
+  background-color: black;
+  min-height: 60px;
+  color: white;
+  display: flex;
+
+  div {
+    display: inline-block;
+    border: 1px dotted white;
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+  }
+  ul {
+    
+    width: 100%;
+
+    .leftmost {
+
+    }
+
+    .rightmost {
+
+    }
+  }
+
+  li {
+    list-style: none;
+    display: inline;
+  }
+}
+// end nick
+
 .docked-widget {
   position: fixed;
-  bottom: 0px;
-  right: 10px;
-  width: 200px;
+  top: 0px;
+  width: 100vw;
   z-index: 9999;
+  left:0;
 }
 
 .dock {
@@ -43,7 +79,7 @@
 
 
 .widget {
-  width: 200px;
+  width: 100vw;
   border: 1px solid grey;
   border-bottom: none;
   animation-duration: 0.2s;

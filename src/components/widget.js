@@ -5,7 +5,7 @@ import './widget.scss';
 
 class Widget extends Component {
   state = {
-    opened: false,
+    opened: true,
     showDock: true,
   }
 
@@ -51,33 +51,32 @@ class Widget extends Component {
     const { bodyText, headerText, footerText } = this.props;
 
     return (
+      
       <div className="docked-widget">
-        <Transition in={opened} timeout={250} onExited={this.handleWidgetExit}>
-          {status => (
-            <div className={`widget widget-${status}`}>
-              <div className="widget-header">
-                <div className="widget-header-title">
-                  {headerText}
-                </div>
-                <button
-                  type="button"
-                  className="widget-header-icon"
-                  onClick={this.handleToggleOpen}
-                  onKeyPress={this.handleToggleOpen}
-                >
-                  X
-                </button>
-              </div>
-              <div className="widget-body">
-                {bodyText}
-              </div>
-              <div className="widget-footer">
-                {footerText}
-              </div>
-            </div>
-          )}
-        </Transition>
-        {body}
+        <div className="omninav">
+        <div className="omninav-topbar black">
+          <div className="leftmost">
+          <ul>
+            <li>
+            More Info For  
+            </li>  
+          </ul>
+          </div>
+          <div className="rightmost">
+          <ul>
+            <li>Visit</li>
+            <li>Apply</li>
+            <li>Give</li>
+          </ul>
+          </div>
+          <div className="omninav-search">
+            search
+          </div>
+          <div className="paw">
+            paw
+          </div>
+        </div>
+      </div>
       </div>
     );
   }
