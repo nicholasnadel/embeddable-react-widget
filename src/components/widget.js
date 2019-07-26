@@ -89,9 +89,9 @@ Widget.propTypes = {
 };
 
 Widget.defaultProps = {
-  var1: ' pass',
-  var2: ' from',
-  var3: ' Cascade! https://dev-cascade.chapman.edu/entity/open.act?id=2a73ea16c0a81e4b340dfbdd488c8d66&type=format ',
+  var1: ' default props',
+  var2: ' from https://focused-ramanujan-df5c24.netlify.com/blank.html',
+  var3: ' trying to pass from https://dev-cascade.chapman.edu/entity/open.act?id=2a73ea16c0a81e4b340dfbdd488c8d66&type=format',
 };
 
 export default Widget;
