@@ -48,7 +48,7 @@ class Widget extends Component {
   render() {
     const { opened } = this.state;
     const body = this.renderBody();
-    const { bodyText, headerText, footerText } = this.props;
+    const { var1, var2, var3 } = this.props;
 
     return (
       
@@ -64,9 +64,9 @@ class Widget extends Component {
           </div>
           <div className="rightmost">
           <ul>
-            <li>Visit</li>
-            <li>Apply</li>
-            <li>Give</li>
+            <li>{var1}</li>
+            <li>{var2}</li>
+            <li>{var3}</li>
           </ul>
           </div>
           <div className="omninav-search">
@@ -83,15 +83,15 @@ class Widget extends Component {
 }
 
 Widget.propTypes = {
-  headerText: PropTypes.string,
-  bodyText: PropTypes.string,
-  footerText: PropTypes.string,
+  var2: PropTypes.string,
+  var1: PropTypes.string,
+  var3: PropTypes.string,
 };
 
 Widget.defaultProps = {
-  headerText: 'Header',
-  bodyText: 'Body',
-  footerText: 'Footer',
+  var1: ' pass',
+  var2: ' from',
+  var3: ' Cascade! https://dev-cascade.chapman.edu/entity/open.act?id=2a73ea16c0a81e4b340dfbdd488c8d66&type=format ',
 };
 
 export default Widget;
